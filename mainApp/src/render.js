@@ -1,5 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import './index.css'
 
 function Render(props) {
   const { loading } = props;
@@ -13,9 +14,8 @@ function Render(props) {
 }
 
 export default function render({ loading }) {
-  const root = ReactDOM.createRoot(document.getElementById('subapp-container'));
-
-  root.render(<Render loading={loading} />);
+  const container = document.getElementById('subapp-container');
+  ReactDOM.render(<Render loading={loading} />, container);
 }
 
 

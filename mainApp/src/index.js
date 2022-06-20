@@ -20,7 +20,7 @@ registerMicroApps(
     [
         {
             name: 'react-app',
-            entry: '//localhost:3002',
+            entry: '//localhost:3001',
             container: '#sub-app',
             loader,
             activeRule: '/react-app',
