@@ -16,23 +16,7 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div class="mainapp">
-      <!-- 标题栏 -->
-      <header class="mainapp-header">
-        <h1>QianKun</h1>
-      </header>
-      <div class="mainapp-main">
-        <!-- 侧边栏 -->
-        <ul class="mainapp-sidemenu">
-          <li onclick="push('/react-app')">React-App</li>
-          <li onclick="push('/vue-app')">Vue-App</li>
-        </ul>
-        <!-- 子应用  -->
-        <main id="subapp-container"></main>
-      </div>
+    <div id="app">
     </div>
-    <script>
-      function push(subapp) { history.pushState(null, subapp, subapp) }
-    </script>
   </body>
 </html>
