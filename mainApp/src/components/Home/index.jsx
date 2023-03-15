@@ -27,20 +27,26 @@ const items = [
     return {
         key: String(index + 1),
         icon: React.createElement(icon),
-        label: <Link to="sub/react-app">react-app</Link>,
+        label: <Link to="/react-app/form">react-app-form</Link>,
     }
   } else if (index === 1) {
     return {
         key: String(index + 1),
         icon: React.createElement(icon),
-        label: <Link to="/sub/vue-app">vue-app</Link>,
+        label: <Link to="/vue-app">vue-app</Link>,
     }
-  } else {
+  } else  if (index === 2) {
     return {
         key: String(index + 1),
         icon: React.createElement(icon),
-        label: <Link to="/setting">`nav ${index + 1}`</Link>,
+        label: <Link to="/react-app/table">react-app-table</Link>,
     }
+  } else {
+      return {
+          key: String(index + 1),
+          icon: React.createElement(icon),
+          label: <Link to="/">`nav ${index + 1}`</Link>,
+      }
   }
 });
 

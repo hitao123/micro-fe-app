@@ -10,8 +10,9 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<p>index</p>} />
           <Route path="/setting" element={<Setting />} />
-          <Route path="/sub/vue-app" element={<SubApp />} />
-          <Route path="/sub/react-app" element={<SubApp />} />
+          <Route path="/vue-app" element={<SubApp />} />
+          <Route path="/react-app/form" element={<SubApp />} />
+          <Route path="/react-app/table" element={<SubApp />} />
         </Routes>
     </Home>
   )
