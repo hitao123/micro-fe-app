@@ -6,14 +6,14 @@ import SubApp from "./components/subApp/index.jsx";
 
 const App = () => {
   return (
-      <div>
-        1222
+    <Home>
         <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/setting" element={<Setting />} />
-        <Route path="/sub/vue-app" element={<SubApp />} />
+          <Route exact path="/" element={<p>index</p>} />
+          <Route path="/setting" element={<Setting />} />
+          <Route path="/sub/vue-app" element={<SubApp />} />
+          <Route path="/sub/react-app" element={<SubApp />} />
         </Routes>
-      </div>
+    </Home>
   )
 }
 

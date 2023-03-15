@@ -90,13 +90,17 @@ const SubApp = () => {
                     name: 'react-app',
                     entry: '//localhost:3001',
                     container: '#sub-app',
-                    activeRule: '/react-app',
+                    activeRule: (location) => {
+                        return location.href.includes('/react-app')
+                    },
                 },
                 {
                     name: 'vue-app',
-                    entry: '//localhost:8081',
+                    entry: '//localhost:8082',
                     container: '#sub-app',
-                    activeRule: '/vue-app',
+                    activeRule: (location) => {
+                        return location.href.includes('/vue-app')
+                    },
                 },
             ],
             {
